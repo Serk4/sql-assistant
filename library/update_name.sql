@@ -1,0 +1,1 @@
+UPDATE users SET last_name = 'DefaultName' WHERE user_id = 123;

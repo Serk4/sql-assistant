@@ -1,0 +1,17 @@
+{
+  "name": "database-agent",
+  "version": "1.0.0",
+  "description": "SQL script generator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Orbit5 Industries",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0",
+    "sqlite3": "^5.1.7"
+  }
+}

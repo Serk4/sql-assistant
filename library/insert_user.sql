@@ -1,0 +1,1 @@
+INSERT INTO users (user_id, first_name, last_name, email, phone, status) VALUES (999, 'New User', 'pending');

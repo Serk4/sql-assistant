@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Fixer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px; /* Limits overall width for readability */
+            margin: 20px auto; /* Centers the content with some padding */
+            padding: 20px;
+        }
+        textarea {
+            width: 100%; /* Makes the textarea span the full width of the container */
+            height: 80px; /* Sets height for ~2 rows, adjustable */
+            padding: 10px; /* Adds some padding for better appearance */
+            font-size: 16px; /* Improves readability */
+            border: 1px solid #ccc; /* Light border for visibility */
+            border-radius: 4px; /* Rounded corners for modern look */
+            resize: vertical; /* Allows vertical resizing, but not horizontal */
+            box-sizing: border-box; /* Ensures padding doesn’t add to width */
+        }
+        button {
+            margin-top: 10px; /* Spacing above the button */
+            padding: 10px 20px; /* Larger button for better clickability */
+            font-size: 16px; /* Matches textarea size */
+            background-color: #4CAF50; /* Green button for action */
+            color: white; /* White text for contrast */
+            border: none; /* Remove default border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Hand cursor on hover */
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        #result {
+            margin-top: 20px; /* Spacing above result */
+            padding: 10px; /* Padding for readability */
+            border: 1px solid #ddd; /* Light border for result */
+            border-radius: 4px; /* Rounded corners */
+            white-space: pre-wrap; /* Preserves formatting for SQL output */
+        }
+    </style>
+</head>
+<body>
+    <h1>SQL Fixer</h1>
+    <form id="requestForm">
+		<label for="prompt">What needs fixing?</label><br>
+		<textarea rows="4" cols="50" placeholder="Enter your SQL request (e.g., 'Update Jane Doe’s name to Watson')"></textarea>
+		<button type="submit">Submit</button>
+	  </form>
+	  <div id="result"></div>
+	  <script src="script.js"></script>
+</body>
+</html>

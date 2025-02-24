@@ -1,0 +1,1 @@
+DELETE FROM users WHERE user_id = 000 AND status = 'inactive';

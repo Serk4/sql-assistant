@@ -1,0 +1,1 @@
+UPDATE users SET status = 'active' WHERE user_id = 456;
